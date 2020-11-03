@@ -1,14 +1,13 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const config = require('./config/config')
 const routes = require('./routes')
 const bodyParser = require('body-parser')
 
 const server = express()
 
 mongoose.connect(
-    config.module.connectionDB.url,
+    'mongodb+srv://admin:Amendobobo@urbanvg.qscz8.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 )
 
