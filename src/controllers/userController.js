@@ -3,10 +3,7 @@ const auth_token = require('../services/auth')
 const md5 = require("md5");
 const {
 	cloudinary
-} = require('../services/cloudinary');
-const {
-	update
-} = require("../model/user");
+} = require('../services/cloudinary')
 
 module.exports = {
 	async signup(req, res) {
